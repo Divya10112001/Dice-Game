@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">dice</string>
+    <string name="heading">     Welcome to DICE game</string>
+    <string name="text">              ROLL THE DICE </string>
+    <string name="status">TAP HERE - PLAYER 1</string>
+    <string name="p1">Player 1</string>
+    <string name="p2">Player 2</string>
+
+</resources>

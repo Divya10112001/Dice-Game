@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#130101"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="395dp"
+        android:layout_height="55dp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="30sp"
+        android:fontFamily="casual"
+        android:text="@string/heading"
+        android:textColor="#13F61D"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="416dp"
+        android:layout_height="247dp"
+        android:background="#100B0B"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text1">
+
+        <ImageView
+            android:id="@+id/img1"
+            android:layout_width="225dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#F6F0F0"
+            android:contentDescription="image1"
+            app:srcCompat="@drawable/dice1"
+            tools:layout_editor_absoluteX="44dp"
+            tools:layout_editor_absoluteY="298dp" />
+
+        <ImageView
+            android:id="@+id/img2"
+            android:layout_width="230dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="1sp"
+            android:layout_weight="1"
+            android:background="#E8E1E1"
+            android:contentDescription="image2"
+            app:srcCompat="@drawable/dice1" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="350dp"
+        android:layout_height="136dp"
+        android:layout_marginLeft="20sp"
+        android:fontFamily="sans-serif-condensed"
+        android:onClick="diceroll"
+        android:text="@string/status"
+        android:textColor="#0CF115"
+        android:textSize="48sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text1"
+        app:layout_constraintVertical_bias="0.931" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="415dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="4dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/status"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text1"
+        app:layout_constraintVertical_bias="0.891">
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="138dp"
+            android:layout_height="59dp"
+            android:layout_marginStart="16dp"
+            android:layout_weight="1"
+            android:text="@string/p1"
+            android:textColor="#0DEA16"
+            android:textSize="34sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="419dp" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="176dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="50sp"
+            android:layout_marginBottom="136dp"
+            android:layout_weight="1"
+            android:text="@string/p2"
+            android:textColor="#0CE614"
+            android:textSize="34sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintBottom_toTopOf="@+id/status"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.655"
+            app:layout_constraintStart_toEndOf="@+id/textView4" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
